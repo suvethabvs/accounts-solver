@@ -9,14 +9,14 @@ def accounting_equation():
     tot_salary = ppl_working  * salary
     liability = rent + product_cost + current_bill + tot_salary
     assest = liability + owners_enquity
-    print (assest)
+    print ("assest:",assest)
     
     
 def net_income():
     revenue = int (input ("enter your revenue :"))
     expenses = int (input ("enter your expenses :"))
     net_income = revenue - expenses
-    print ("net_income",net_income)
+    print ("net_income:",net_income)
     return(net_income)
 
 
@@ -30,24 +30,24 @@ def break_even_point():
 def cash_ratio():
     cash =  int (input ("enter cash :"))
     rent = int (input ("enter your rent:"))
-    produt_cost = int (input ("enter your product cost:"))
+    product_cost = int (input ("enter your product cost:"))
     current_bill =  int (input ("enter your current bill:"))
     ppl_working =  int (input ("enter number of people working:"))
     salary = int (input ("enter salary :"))
     tot_salary = ppl_working  * salary
     liability = rent + product_cost + current_bill + tot_salary
     cash_ratio = cash / liability
-    print ("cash ratio",cash_ratio)
+    print ("cash ratio:",cash_ratio)
     
 def profit_margin():
     sales = int(input("enter your sales:"))
     income = net_income()
     profit_margin = income /sales
-    print ("profit margin", profit_margin)
+    print ("profit margin:", profit_margin)
     
 def debt_to_equity_ratio():
     rent = int (input ("enter your rent:"))
-    produt_cost = int (input ("enter your product cost:"))
+    product_cost = int (input ("enter your product cost:"))
     current_bill =  int (input ("enter your current bill:"))
     ppl_working =  int (input ("enter number of people working:"))
     salary = int (input ("enter salary :"))
@@ -62,7 +62,17 @@ def cost_of_sold_goods():
     selling_price = int (input ("enter the selling price :"))
     cost_of_sold_goods =  materials_cost / selling_price
     print ("cost of sold goods :", cost_of_sold_goods)
+
+ #main program
     
+print ("1. accounting equation")
+print ("2. net income")
+print ("3. break even point ")
+print ("4. cash ratio")
+print ("5. profit margin")
+print ("6. debt-to equity ratio")
+print ("7. cost of sold goods")
+
 choice=int(input("enter your choice:"))
 if (choice==1):
     accounting_equation()
